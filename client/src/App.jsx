@@ -12,6 +12,7 @@ function App() {
     </section>
     <section className='hero'>
         <Hero />
+        
       </section>
       <section>
         <Sale />
