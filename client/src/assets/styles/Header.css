@@ -1,0 +1,231 @@
+/* navbar css*/
+
+/* modal css */
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0rem;
+}
+
+.phoneLoginModal_body {
+  /* height: 300px; */
+  display: flex;
+  padding: 2.5rem 2.5rem;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  gap: 0.4rem;
+}
+
+.wifth_chckbox {
+  width: 20px !important;
+}
+
+.phoneLoginModal_body p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text-grey);
+}
+
+.phoneLoginModal_body h6 {
+  font-family: "Roboto";
+}
+
+.phoneLoginModal_body input {
+  width: 100%;
+  padding: 0.3rem 1rem;
+  outline: none;
+}
+
+.PhoneloginButton {
+  background-color: var(--primary-color);
+  color: var(--white);
+  outline: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  border: none;
+  border-radius: 2px;
+}
+
+.userResgistrationContinuebtn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  outline: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  border: none;
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 2px;
+}
+
+.PhoneloginButton:hover {
+  background-color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.footer_phoneLoginModal button {
+  text-decoration: none;
+  color: var(--text-grey);
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.useRegistration_body {
+  height: 500px;
+  display: flex;
+  padding: 2.5rem 2.5rem;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  gap: 0.4rem;
+}
+
+.useRegistration_body p {
+  color: var(--text-grey);
+}
+
+.footer_phoneLoginModal button:hover {
+  text-decoration: underline;
+  color: var(--text-grey);
+}
+
+.footer_phoneLoginModal {
+  text-align: center;
+}
+
+.react-international-phone-country-selector-button__button-content {
+  padding: 0.2rem 0.5rem;
+}
+
+.dfoodoterms_agreement {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.dfoodoterms_agreement p {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-bottom: auto;
+}
+
+.dfoodoterms_agreement input {
+  margin-bottom: auto;
+  margin-top: 0.3rem;
+  padding: 0rem;
+}
+
+.userRegistration_phoneNumber input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+#phoneNumberUserRegistration {
+  padding: 0rem;
+}
+
+.react-international-phone-input-container {
+  padding: 0rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.navItem p {
+  margin: 0;
+  color: var(--black);
+}
+
+.width50 {
+  width: 50%;
+}
+
+@media screen and (min-width: 991px) {
+  .navbar-collapse {
+    flex-basis: unset !important;
+    flex-grow: unset !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    flex-basis: 100% !important;
+    flex-grow: 1 !important;
+  }
+
+  .hideAfter991 {
+    display: none;
+  }
+
+  .width70 {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hideAfter768 {
+    display: none;
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  box-shadow: 0px 2px 2px 0px #0000002e;
+}
+
+#profile_dropDown {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+}
+
+#profile_dropDown h5 {
+  margin: 0;
+
+  width: fit-content;
+}
+
+.get_help_header {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.loggedIn_profile_drop img {
+  width: 15px;
+  height: 15px;
+}
+
+.loggedIn_profile_drop {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-weight: 400;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Roboto";
+}
+
+.dropdown-menu {
+  right: 0 !important;
+  /* left: -300% !important; */
+}
+
+.dropdown-menu[data-bs-popper] {
+  right: 0% !important;
+  width: fit-content;
+  left: -200% !important;
+}

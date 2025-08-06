@@ -1,0 +1,236 @@
+/* Navbar Wrapper */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fff; /* Or your preferred background */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06); /* Optional: subtle shadow */
+}
+
+/* Container Flex */
+.navbar-container {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+  gap: 32px;                 /* Optional: space between logo and links */
+}
+
+/* Left Section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icon {
+  font-size: 1rem;
+}
+
+.nav-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-divider {
+  margin: 0 6px;
+  color: #ccc;
+}
+
+/* Center Logo */
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Right Navigation */
+.nav-right {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  z-index: 99;
+  padding: 16px 0;
+}
+
+.nav-right ul {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  gap: 24px;
+  list-style: none;
+  padding: 0;                /* Remove top/bottom padding */
+  margin: 0;                 /* Remove top/bottom margin */
+}
+.nav-right ul li {
+  margin: 0;                 /* Remove margin */
+  padding: 0;                /* Remove padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-right ul li a {
+  text-decoration: none;
+  
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-right ul li a:hover {
+  color: #000000;
+}
+
+.contact-button {
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-hamburger {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .navbar-container {
+    max-width: 98vw;
+    padding: 0 12px;
+  }
+  .logo {
+    height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    z-index: 99;
+    padding: 16px 0;
+  }
+  .nav-right.show {
+    display: block;
+  }
+  .nav-right ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .navbar-hamburger {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 100;
+  }
+  .contact-info {
+    display: none;
+  }
+}
+
+@media (max-width: 765px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 10px;
+  }
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+  }
+  .nav-right ul {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+  }
+  .nav-right ul::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  .nav-right ul li {
+    padding: 8px 0;
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 753px) {
+  .hamburger {
+    display: none !important;
+  }
+}
+
+/* Optional: Hamburger menu styles (if you implement it in JSX) */
+.hamburger {
+  display: none;
+  display: flex;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Hamburger lines */
+.hamburger span,
+.hamburger span:before,
+.hamburger span:after {
+  display: block;
+  background: #333;
+  height: 3px;
+  width: 28px;
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger span:before,
+.hamburger span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.hamburger span:before {
+  top: -8px;
+}
+
+.hamburger span:after {
+  top: 8px;
+}
+
+
